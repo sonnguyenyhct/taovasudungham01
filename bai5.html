@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major' , 'Leo'];
+        function find(findstar){
+            for (let count = 0; count < stars.length; count++){
+                if (findstar === stars[count]){
+                    return constellation[count];
+                }
+            }
+            return null;
+        }
+        let starNeedFind = prompt("Nhap vao ten ngoi sao : ");
+        if (find(starNeedFind) === null){
+            alert("Khong tim thay ten ngoi sao");
+        }else {
+            alert(find(starNeedFind));
+        }
+    </script>
+</body>
+</html>

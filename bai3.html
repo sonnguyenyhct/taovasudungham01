@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+    <script>
+        function twonumber(a,b) {
+            if (a > b){
+                alert(a + " > " + b);
+            }else {
+                return a+b;
+            }
+        }
+        let num1 = parseInt(prompt("Nhap vao so thu nhat"));
+        let num2 = parseInt(prompt("Nhap vao so thu hai"));
+        let numbers = twonumber(num1,num2);
+        if (typeof numbers == "number"){
+            alert("Tong 2 so la "+ numbers);
+        }
+    </script>
+</body>
+</html>
